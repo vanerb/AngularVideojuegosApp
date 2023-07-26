@@ -1,0 +1,43 @@
+<div class="container">
+    
+    
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <div *ngIf="loading" class="spinner-border" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <h3>Editar juego</h3>
+
+                    <span *ngIf="submited && updateitem.invalid">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+
+                    
+                    <form [formGroup]="updateitem" (ngSubmit)="btUpdate()">
+
+                       
+                        <div class="row mt-4">
+                            <div class="col">
+                                <input formControlName="name" type="text" class="form-control" placeholder="Nombre" value="{{ items[0]?.name }}">
+                            </div>
+
+                            <div class="col">
+                                <input formControlName="developer" type="text" class="form-control"
+                                    placeholder="Desarrolladora" value="{{ items[0]?.developer }}" >
+                            </div>
+
+
+                        </div>
+                        <input formControlName="price" type="number" class="form-control mt-4" placeholder="Precio" value="{{ items[0]?.price }}">
+                        <input formControlName="note" type="number" class="form-control mt-4" placeholder="Nota" value="{{ items[0]?.note }}">
+
+                        <button type="text" class="btn btn-secondary m-4" routerLink="/list">Volver</button>
+
+                        <button type="submit" class="btn btn-primary m-4">Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

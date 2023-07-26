@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "videojuegoscrud": {
+      "hosting": {
+        "AngularVideojuegos": [
+          "videojuegoscrud"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "videojuegoscrud"
+  }
+}

@@ -1,5 +1,8 @@
 # AngularVideojuegos
 
+## Descripcion
+Esta página web permite hacer un CRUD con una base de datos alojada en Firebase permite eliminar editar crear y visualizar datos en este caso titulos de videojuegos todo hecho en Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
 ## Development server

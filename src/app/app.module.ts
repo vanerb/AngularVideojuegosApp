@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { EditComponent } from './components/edit/edit.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EditComponent } from './components/edit/edit.component';
     CreateComponent,
     HeaderComponent,
     FooterComponent,
-    EditComponent
+    EditComponent,
+    RegisterComponent,
+    LoginComponent
     
   ],
   imports: [

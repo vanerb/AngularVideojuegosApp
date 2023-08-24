@@ -3,6 +3,8 @@ import { Firestore } from '@angular/fire/firestore';
 import { CrudService } from 'src/app/services/crud.service';
 import { ToastrService } from 'ngx-toastr';
 import { map } from 'rxjs/operators';
+import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -19,7 +21,9 @@ export class ListComponent implements OnInit {
   constructor(
     private firestore: Firestore,
     private _crudService: CrudService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private userService: UserService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
